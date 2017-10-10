@@ -1,4 +1,4 @@
-# test-technique
+# Test technique
 Bonjour Hamza, merci d'avoir accepté de réaliser ce test technique. En voici donc l'énoncé. 
 
 PS : J'ai conscience que l'exercice est difficile. Pour te rassurer, nous n'attendons pas de toi un programme parfait. Nous voulons juste voir comment tu as abordé le problème et si le code et l'historique git est clair. Nous n'attendons pas que tu passes des jours dessus.
@@ -23,21 +23,54 @@ Expected output: (Very basic)
 ```
 Example of inputs (Do not hesitate to test with some other ones): 
 
+Random one : 
 ```
 {
-  "categorie": 'ordinateur',
-  "tags": ['apple', 'portable', 'meilleurs_ventes'],
+  "categorie": "ordinateur",
+  "tags": ["apple", "portable", "meilleurs_ventes"],
   "prix_ht": "789,60€", 
-  "color": "gris", (could be also null => do not print error in not required cases)
-  "vendeur": 'Apple'
+  "color": "gris",
+  "vendeur": "Apple",
+  "description": "Le tout nouveau macbook cheap est enfin disponible !!!"
 }
 ```
+The one from google but also schema.org 
 ```
 {
-  ""
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "Executive Anvil",
+  "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+   ],
+  "description": "Sleeker than ACME's Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height.",
+  "mpn": "925872",
+  "brand": {
+    "@type": "Thing",
+    "name": "ACME"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "89"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "119.99",
+    "priceValidUntil": "2020-11-05",
+    "itemCondition": "http://schema.org/UsedCondition",
+    "availability": "http://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "Executive Objects"
+    }
+  }
 }
 ```
-This one is a tricky one
+This one is a tricky one !
 ```
 {
     "_id" : "126273-BLEUMA",
@@ -45,8 +78,7 @@ This one is a tricky one
     "Couleur" : {
         "Reference" : "BLEUMA",
         "Libelle" : "BLEU MARINE",
-        "CouleurBase" : "BLEU",
-        "SEOId" : "bleu"
+        "CouleurBase" : "BLEU"
     },
     "CouleurBase" : {
         "RefCouleurBase" : "BLEU",
@@ -338,3 +370,19 @@ This one is a tricky one
     ]
 }
 ```
+
+# Suggestions / Ideas
+
+The approach should be IA based. Here are some ideas :
+* Steming, lemming, language detection, tokenization
+* Synonyms and distance (levenstein etc)
+* Find a product dataset and train a neural network to identify keys based on values
+* ... To be continued ...
+
+As a reminder, once the test is done you can make a pull request from your fork to master and I'll review your PR :)
+I suggest this format of PR : 
+1/ Wich way of resolution I choose and why
+2/ How to test
+3/ Limits and difficulties
+
+I hope you'll have some fun ! Good luck :)
