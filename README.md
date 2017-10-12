@@ -1,5 +1,5 @@
 # Test technique
-Bonjour Hamza, merci d'avoir accepté de réaliser ce test technique. En voici donc l'énoncé. 
+Bonjour, merci d'avoir accepté de réaliser ce test technique. En voici donc l'énoncé. 
 
 PS : J'ai conscience que l'exercice est difficile. Pour te rassurer, nous n'attendons pas de toi un programme parfait. Nous voulons juste voir comment tu as abordé le problème et si le code et l'historique git est clair. Nous n'attendons pas que tu passes des jours dessus.
 
