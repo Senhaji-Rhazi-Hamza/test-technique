@@ -11,9 +11,13 @@ follow the steps described
 
 -sudo pip3 install -U nltk
 
-then you have to downald jupyter for testing:
+#### then you have to downald jupyter for testing:
 
 -downald jupyter http://jupyter.readthedocs.io/en/latest/install.html
+
 -on a terminal in the project directory tap command : jupyter notebook
+
 -then click on the file named Test_Tech to open it and test it
+
 -the input tested is by the end of the notebook
+
